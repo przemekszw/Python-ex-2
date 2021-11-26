@@ -1,5 +1,6 @@
-def funkcja(n,m):
-    x = int(input("Podaj x:"))
-    y = int(input("Podaj y:"))
-    print(bool(x<=n and y<=m ))    
-funkcja(5,5)
+tablica = [2,3,2,5,8,1,9,8]
+for x in tablica:
+    for y in range(len(tablica)):
+          while x!=tablica[y]:
+              break
+    print(x)

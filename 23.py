@@ -4,7 +4,17 @@ def bubbleSort(tablica):
         for y in range(0,n-x-1):
             if tablica[y] > tablica[y+1]:
                 tablica[y], tablica[y+1] = tablica[y+1], tablica[y]
-tablica = [15, 38, 7, 23, 14]
+tablica = [6,8,3,1,0,5,7]
 bubbleSort(tablica)
-for x in range(len(tablica)):
-    print(tablica[x])
+n = len(tablica)
+if n%2==0:
+    n = n / 2 
+    m = n - 1
+    n = int(n)
+    m = int(m)
+    wynik = (tablica[n]+tablica[m])/2
+else:
+    n = n / 2 - 0.5
+    n = int(n)
+    wynik = tablica[n]
+print(wynik)
